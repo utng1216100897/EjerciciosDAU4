@@ -1,0 +1,156 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui"> 
+      
+<f:view>
+	<h:head>
+		<title>Control de Usuarios</title>
+		<style type="text/css">
+.ui-widget{
+	font-size: 75% !important;
+}
+</style>
+	</h:head>
+
+	<h:body>
+	<h:form id="frmGeneral">
+		<p:fieldset legend="Gestion de Usuarios" toggleable="true">
+			<p:messages  id="messages" />
+			<h:inputHidden id="id" size="60" value="#{usuarioBean.usuario.id}" />
+			<h:panelGrid columns="2"
+				style="font-family: Verdana, Arial; font-weigth:bold;">
+				
+				<h:outputLabel id="lblNombre" value="*Nombre;" for="nombre" 
+					style="float:right;" />
+				<p:inputText id="nombre" size="60" 
+					value="#{usuarioBean.usuario.nombre}" required="true" 
+					requiredMessage="Campo [nombre] es requerido." />
+					
+				<h:outputLabel id="lblLogin" value="*Login;" for="login" 
+					style="float:right;" />
+				<p:inputText id="login" size="20" 
+					value="#{usuarioBean.usuario.login}" required="true" 
+					requiredMessage="Campo [login] es requerido." />
+				
+				<h:outputLabel id="lblClave" value="*Clave;" for="clave" 
+					style="float:right;" />
+				<p:inputText id="clave" size="20" 
+					value="#{usuarioBean.usuario.clave}" required="true" 
+					requiredMessage="Campo [clave] es requerido." />
+				
+				<h:outputLabel id="lblEdad" value="*Edad;" for="edad" 
+					style="float:right;" />
+				<p:inputText id="edad" size="2" 
+					value="#{usuarioBean.usuario.edad}" required="true" 
+					requiredMessage="Campo [edad] contiene errores, Verifique.">
+					<f:validateLongRange minimum="5"/>
+				</p:inputText>
+				
+				<h:outputLabel id="lblRolSeguridad" value="*Rol;" for="rolSeguridad" 
+					style="float:right;" />
+				<h:selectOneMenu id="solSeguridad"
+					value="#{usuarioBean.rolSeguridadID} requiered="true"
+					requiredMessage="Campo [Rol de Seguridad] es obligatorio.">
+					<f:selectItem itemLabel="Seleccione..." itemValue="" />
+					<f:selectItems value="#{rolSeguridadBean.rolesSeguridad}"
+						var="rol" itemLabel="#{rol.nombre}" itemValue="#{rol.id}" />
+				</h:selectOneMenu>
+				
+				<p:commandButton value="Guardar" action="#{usuarioBean.save()}"
+					update="frmGeneral, messages, dtUsuarios" />
+			</h:panelGrid>
+			
+			<p:spacer height="10" />
+			
+			<p:dataTable id="dtUsuarios"
+				emptyMessage="No se encontraron registros"
+				value="#{usuarioBean.usuarios}" var="u"
+				style="text-align:center; font-weight:bold;">
+				<f:facet name="header">
+					<h:outputText value="Registro de Usuarios" />
+				</f:facet>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Nombre" />
+					</f:facet>
+					<h:outputText value="#{u.nombre}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Login" />
+					</f:facet>
+					<h:outputText value="#{u.login}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Clave" />
+					</f:facet>
+					<h:outputText value="#{u.clave}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Edad" />
+					</f:facet>
+					<h:outputText value="#{u.edad}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Rol de Seguridad" />
+					</f:facet>
+					<h:outputText value="#{u.rolSeguridad.nombre}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputText value="Control" />
+					</f:facet>
+					<f:ajax event="click" render="@form"
+						listener="#{usuarioBean.remove(u)}">
+						<h:commandLink value="Eliminar" />
+					</f:ajax>
+					
+					<p:spacer height="10" />
+					
+					<f:ajax event="click" render="@form"
+						listener="#{usuarioBean.search(u)}">
+						<h:commandLink value="Editar" />
+					</f:ajax>					
+				</p:column>
+				
+				<f:facet name="footer">
+					<h:outputText value="Hay un total de #{usuarioBean.count}
+										Usuario(s) registrados en el sistema." />
+				</f:facet>
+			</p:dataTable>
+		</p:fieldset>
+	</h:form>
+</h:body>
+</f:view>
+</html>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						
+					
+					
+					
+					
