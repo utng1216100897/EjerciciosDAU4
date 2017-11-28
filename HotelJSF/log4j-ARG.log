@@ -1,0 +1,96 @@
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6253c26
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e8f7922] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6253c26
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e8f7922] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6253c26
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e8f7922] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6253c26
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e8f7922] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6253c26
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e8f7922] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+(LogHelper.java:31) INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: testdb
+	...]
+(Version.java:45) INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.12.Final}
+(Environment.java:213) INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+(JavaReflectionManager.java:66) INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+(DriverManagerConnectionProviderImpl.java:70) WARN main org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+(DriverManagerConnectionProviderImpl.java:126) INFO main org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/testdb]
+(DriverManagerConnectionProviderImpl.java:135) INFO main org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=postgres, password=****}
+(DriverManagerConnectionProviderImpl.java:140) INFO main org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+(PooledConnections.java:41) INFO main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+(Dialect.java:157) INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+(LobCreatorBuilderImpl.java:124) INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+(BasicTypeRegistry.java:148) INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@957e06
+(DdlTransactionIsolatorNonJtaImpl.java:47) INFO main org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@665e9289] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+(QueryTranslatorFactoryInitiator.java:47) INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory

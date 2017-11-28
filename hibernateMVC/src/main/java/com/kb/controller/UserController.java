@@ -29,8 +29,7 @@ public class UserController {
     @RequestMapping(value = "/user/add", method = RequestMethod.POST)
     public String addUser(@ModelAttribute("user") User user, BindingResult result) {
         if (null != user) {
-        	System.out.println(user);
-            userService.addUser(user);
+        	 userService.addUser(user);
         }
         return "redirect:/home";
     }
@@ -42,7 +41,7 @@ public class UserController {
     }
  
     @RequestMapping("/edit/{userId}")
-    public String editUser(@PathVariable("userId") int userId, Map<String, Object> map) {
+    public String editUser(@PathVariable("userId") int userId,  Map<String, Object> map) {
         User user = userService.getUserById(userId);
         // Providing new value for Edit
         user.setFirstname("EditedName");

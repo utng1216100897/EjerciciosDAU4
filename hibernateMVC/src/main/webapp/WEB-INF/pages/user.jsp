@@ -52,7 +52,7 @@
 <form:form method="post" action="${action}" modelAttribute="user">
     <table>
    
-  <c:if test="${not empty user.firstName}">
+  <c:if test="${not empty user.firstname}">
     <tr>
         <td>
             <form:label path="id" cssClass="userLabel">
@@ -69,25 +69,25 @@
  
     <tr>
         <td>
-            <form:label path="firstName" cssClass="userLabel">
+            <form:label path="firstname" cssClass="userLabel">
                 <spring:message code="label.FirstName" />
             </form:label>
         </td>
        
         <td>
-            <form:input path="firstName" />
+            <form:input path="firstname" value="${user.firstname}" />
         </td> 
     </tr>
    
     <tr>
         <td>
-            <form:label path="lastName" cssClass="userLabel">
+            <form:label path="lastname" cssClass="userLabel">
                 <spring:message code="label.LastName" />
             </form:label>
         </td>
         
         <td>
-            <form:input path="lastName" />
+            <form:input path="lastname" value="${user.lastname}"/>
         </td>
     </tr>
     
@@ -123,7 +123,7 @@
     </tr>
  
 </table>    
-</form:form>
+
  
 <h3>List of Users</h3>
  
@@ -139,19 +139,19 @@
     <c:forEach items="${userList}" var="user">
         <tr>
             <td>
-      <a href="<c:url value='/edit/${user.id}' />" >${user.firstName}</a>
+      <a href="<c:url value='/edit/${user.id}' />" >${user.firstname}</a>
       </td>
-            <td>${user.lastName}</td>
+            <td>${user.lastname}</td>
             <td><fmt:formatDate pattern="yyyy-MM-dd" 
             value="${user.dob}" /> </td>
             <td>${user.email}</td>
             <td><a href="<c:url value='/edit/${user.id}' />"> <spring:message code="label.EditUser"/> ></a>
-            <a href="#" onclick="javascript:deleteUser(${user.id})"> <spring:message code="label.Delete"/> ></a>
+            <a href="#" onclick="javascript:deleteUser(${user.id})"><spring:message code="label.Delete"/> ></a>
             </td>
         </tr>
     </c:forEach>
     </table>
 </c:if>
-  
+  </form:form>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC 
 "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
  
 <hibernate-mapping>
     <class name="com.kb.model.User" table="users">
@@ -9,10 +9,10 @@
             <generator class="increment" />
         </id>
         <property name="firstname">
-            <column name="Firstname" />
+            <column name="firstname" />
         </property>
         <property name="lastname">
-            <column name="Lastname" />
+            <column name="lastname" />
         </property>
         <property name="dob">
             <column name="dob" />

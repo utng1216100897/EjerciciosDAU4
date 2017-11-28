@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<title>Control de Roles de Seguridad</title>
+		<style type="text/css">
+.ui-widget {
+	font-size: 75% !important;
+}
+</style>
+	</h:head>
+
+	<h:body>
+	
+		<h:form id="frmGeneral">
+			<p:fieldset legend="Gestion de Roles de Seguridad" toggleable="true">
+				<p:messages id="messages" />
+				<h:inputHidden id="id" size="60" value="#{rolSeguridadBean.rolSeguridad.id}"/>
+				<h:panelGrid columns="2"
+					style="font-family: Verdana, Arial; font-weight:bold;">
+
+					<h:outputLabel id="lblNombre" value="*Nombre:" for="nombre"
+						style="float:right;" />
+					<p:inputText id="nombre" size="60"
+						value="#{rolSeguridadBean.rolSeguridad.nombre}" required="true"
+						requiredMessage="Campo [nombre] es requerido." />
+
+					
+					<p:commandButton value="Guardar" action="#{rolSeguridadBean.save()}"
+						update="frmGeneral, messages, dtrolesSeguridad" />
+				</h:panelGrid>
+
+
+				<p:spacer height="10" />
+
+				<p:dataTable id="dtrolesSeguridad"
+					emptyMessage="No se encontraron registros"
+					value="#{rolSeguridadBean.rolesSeguridad}" var="u"
+					style="text-align:center; font-weight: bold;">
+					<f:facet name="header">
+						<h:outputText value="Registro de rolesSeguridad" />
+					</f:facet>
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputText value="Nombre" />
+						</f:facet>
+						<h:outputText value="#{u.nombre}" />
+					</p:column>
+
+					
+
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputText value="Control" />
+						</f:facet>
+						<f:ajax event="click" render="@form"
+							listener="#{rolSeguridadBean.remove(u)}">
+							<h:commandLink value="Eliminar" />
+						</f:ajax>
+
+						<p:spacer height="10" />
+
+						<f:ajax event="click" render="@form"
+							listener="#{rolSeguridadBean.search(u)}">
+							<h:commandLink value="Editar" />
+						</f:ajax>
+					</p:column>
+
+					<f:facet name="footer">
+
+						<h:outputText
+							value="Hay un total de #{rolSeguridadBean.count}
+							 rolSeguridad(s) registrados en el sistema." />
+					</f:facet>
+
+				</p:dataTable>
+
+			</p:fieldset>
+
+		</h:form>
+
+	</h:body>
+
+</f:view>
+
+
+</html>
